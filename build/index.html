@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Webpack App</title>
+    <link rel="manifest" href="/manifest.json">
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+    <script>
+      window.process = { env: { NODE_ENV: 'production' } };
+      if('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+          .then(() => {
+            console.log('Service Worker Register');
+          }).catch((err) => {
+            console.log(err);
+          })
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <component-example></component-example>
+  <script type="text/javascript" src="app.js"></script></body>
+</html>
