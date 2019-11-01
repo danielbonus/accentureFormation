@@ -11,6 +11,10 @@ export const initRouter = (element) => {
       component: 'home-template-view'
     },
     {
+      path: '/',
+      component: 'home-template-view'
+    },
+    {
       path: '/litelement',
       component: 'litelement-template-view'
     }
