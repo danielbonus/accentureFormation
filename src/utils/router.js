@@ -7,10 +7,6 @@ export const initRouter = (element) => {
   router.setRoutes([
     ...router.getRoutes(),
     {
-      path: '/javascript',
-      component: 'home-template-view'
-    },
-    {
       path: '/',
       component: 'home-template-view'
     },
