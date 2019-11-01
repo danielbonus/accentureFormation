@@ -7,11 +7,11 @@ export const initRouter = (element) => {
   router.setRoutes([
     ...router.getRoutes(),
     {
-      path: '/accentureFormation/build',
+      path: '/',
       component: 'home-template-view'
     },
     {
-      path: '/accentureFormation/build/litelement',
+      path: '/litelement',
       component: 'litelement-template-view'
     }
   ]);
