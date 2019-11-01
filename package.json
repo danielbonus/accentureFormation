@@ -24,9 +24,11 @@
   "homepage": "https://danielbonus.github.io/accentureFormation/",
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
+    "@lit-element-bootstrap/navbar": "^1.0.0-alpha.2",
+    "@lit-element-bootstrap/navs": "^1.0.0-alpha.2",
     "@vaadin/router": "^1.5.1",
-    "bootstrap": "^4.3.1",
     "lit-element": "^2.2.1",
+    "lit-element-bootstrap": "0.0.0",
     "pwa-helpers": "^0.9.1",
     "redux": "^4.0.4"
   },
