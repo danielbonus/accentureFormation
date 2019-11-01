@@ -21,7 +21,7 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://danielbonus.github.io/accentureFormation/build",
+  "homepage": "https://danielbonus.github.io/accentureFormation/",
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "@lit-element-bootstrap/navbar": "^1.0.0-alpha.2",
