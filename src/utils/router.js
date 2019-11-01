@@ -13,6 +13,10 @@ export const initRouter = (element) => {
     {
       path: '/litelement',
       component: 'litelement-template-view'
+    },
+    {
+      path: '/accentureFormation/build/',
+      component: 'home-template-view'
     }
   ]);
 }
