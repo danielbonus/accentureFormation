@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
-
+import '../../components/view-code';
 class LitelementTemplateView  extends LitElement {
 
   static get styles() {
@@ -88,6 +88,41 @@ class LitelementTemplateView  extends LitElement {
           <li>Administrar los atributos de los elementos, de modo que se sincronicen de manera automática con las propiedades del componente y viceversa.</li>
           <li>Enlace automático entre propiedades del componente y el template, lo que conocemos como binding. Gracias a ello conseguimos templates reactivos en los cuales, al actualizarse las propiedades, se actualiza automáticamente el template.</li>
         </ul>
+      </section>
+      <section>
+        <h1>Started kit Lit element</h1>
+        <p>Para ver toda la potencia de LitElement, vamos a crear un proyecto sencillo desde cero donde iremos explicando paso a paso todas sus características:</p>
+        <h3>¿Qué necesitamos para empezar?</h3>
+        <ul>
+          <li>Node JS: Lo instalaremos para utilizar el empaquetador NPM con el que instalaremos los módulos que necesita nuestra aplicación, también nos brinda un estándar para el desarrollo <a href="https://nodejs.org/es/">Descargar</a></li>
+          <li>Started kit LitElement <a href="https://lit-element.polymer-project.org/guide/start">Descargar</a></li>
+        </ul>
+        <p>Si nos fijamos estamos utilizando el CLI de Polymer para montar el proyecto y levantar un servidor de pruebas, esto es para facilitarnos la construcción del proyecto, más adelante seria recomendable ver como funciona este tema.</p>
+        <h4>Procedemos a instalar  Lit element con NPM</h4>
+        <div class="container-code">
+          <view-code code="
+            npm install lit-element">
+          </view-code>
+        </div>
+        <p>Con este paquete ya tenemos disponible la clase de lit Element para poder usarla.</p>
+      </section>
+      <section>
+        <h4>¿Como lo utilizamos?</h4>
+        <p>Para poder utilizarlo tenemos que importarlo en nuestro javascript</p>
+        <div class="container-code">
+          <view-code code="
+          import { LitElement, html } from 'lit-element';
+          export class MyElement extends LitElement {
+            render() {
+             return html '
+              <h1>Soy un componente</h1>
+             ';
+            }
+          }
+          customElements.define('my-element', MyElement);
+          ">
+          </view-code>
+        </div>
       </section>
     `;
   }
